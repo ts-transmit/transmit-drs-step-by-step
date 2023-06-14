@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="main.css">
     
     <!-- Step1: Load & Initialize SDK -->
+    <script src="https://platform-websdk.transmitsecurity.io/platform-websdk/latest/ts-platform-websdk.js" defer="true" id="ts-platform-script"></script> 
+    <script>
+      document.getElementById("ts-platform-script").addEventListener("load", function() {
+        window.tsPlatform.initialize({ clientId: "<your client id>" });
+      });
+    </script>
     
     <!-- Step2: Report Action #1-->
     

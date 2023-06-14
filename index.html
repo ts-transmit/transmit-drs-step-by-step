@@ -24,6 +24,12 @@
     </script>
     
     <!-- Step4: Set UserID -->
+    <script>
+      async function setUserId(userId) {
+        var userid = document.getElementById("username").value;
+        window.tsPlatform.drs.setAuthenticatedUser(userid);
+      }
+    </script>
     
     <!-- Step6: Clear User -->
 
@@ -47,6 +53,10 @@
             </p>
       
             <!-- Step4: Set UserID -->
+            <hr>
+              <button class="btn" onclick="setUserId()">setUserId</button>
+            </p>
+            <hr>
       
             <!-- Step5: Report Action #3 -->
       

@@ -12,7 +12,7 @@
       document.getElementById("ts-platform-script").addEventListener("load", function() {
         window.tsPlatform.initialize({ clientId: "it0hjuu1bloeqh6amob3ccomfecplz5m" });
       });
-</script>
+    </script>
 
     <!-- Step2: Report Action #1-->
      <script>
@@ -35,11 +35,17 @@
             <h2 class="heading">Detection and Response Services</h2>
 
             <!-- Step2: Report Action #1-->
-          <p>
-     <button class="btn" onclick="reportAction('register')">register</button>
-</p>
+            <p>
+           <button class="btn" onclick="reportAction('register')">register</button>
+            </p>
             <!-- Step3: Report Action #2 -->
-      
+            <hr>
+            <p>
+            <button class="btn" onclick="reportAction('login')">Login</button>
+            <input type="text" id="username" class="textbox" placeholder="username"/>
+            <input type="text" id="password" class="textbox" placeholder="password"/>
+            </p>
+
             <!-- Step4: Set UserID -->
       
             <!-- Step5: Report Action #3 -->

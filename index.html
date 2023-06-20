@@ -30,6 +30,11 @@
             }
    </script>
     <!-- Step6: Clear User -->
+   <script>
+  async function clearUser() {
+    window.tsPlatform.drs.clearUser();
+  }
+</script>
 
   <body>
     <section class="wrapper">
@@ -71,7 +76,10 @@
             </p>
 
             <!-- Step6: Clear User -->
-      
+      <p>
+      <button class="btn" onclick="clearUser()">clear_user</button>
+      </p>
+
         </div>
     </div>
     </section>

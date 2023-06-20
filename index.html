@@ -15,7 +15,17 @@
 </script>
 
     <!-- Step2: Report Action #1-->
-    
+     <script>
+      async function reportAction(actionType) {
+        window.tsPlatform.drs.triggerActionEvent(actionType).then((actionResponse) => {
+          let actionToken = actionResponse.actionToken;
+        });
+      }
+</script>
+<p>
+     <button class="btn" onclick="reportAction('register')">register</button>
+</p>
+
     <!-- Step4: Set UserID -->
     
     <!-- Step6: Clear User -->
